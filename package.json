@@ -1,0 +1,30 @@
+{
+  "name": "npm-shrinkwrap-install",
+  "version": "0.0.1",
+  "description": "npm install w/ shrinkwrap",
+  "main": "index.js",
+  "keywords": ["npm-shrinkwrap", "shrinkwrap", "install", "dependencies", "dependency"],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "shrinkwrap": "npm-shrinkwrap"
+  },
+  "bin": {
+    "npm-shrinkwrap": "./bin/shrinkwrap.js",
+    "npm-install": "./bin/install.js",
+    "npm-install-hook": "./bin/hook.js"
+  },
+  "engine": {
+    "node": ">= 0.11.x",
+    "io": ">=1.0"
+  },
+  "author": {
+    "name": "Jingwei \"John\" Liu",
+    "email": "liujingwei@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@th507/npm-shrinkwrap": "^5.4.0",
+    "minimist": "^1.1.3"
+  },
+  "devDependencies": {}
+}
