@@ -3,7 +3,13 @@
   "version": "0.0.1",
   "description": "Simplify package install/update with automatic shrinkwrap file sync",
   "main": "index.js",
-  "keywords": ["npm-shrinkwrap", "shrinkwrap", "install", "dependencies", "dependency"],
+  "keywords": [
+    "npm-shrinkwrap",
+    "shrinkwrap",
+    "install",
+    "dependencies",
+    "dependency"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,11 +17,11 @@
     "npm-shrinkwrap": "./bin/shrinkwrap.js",
     "npm-install": "./bin/install.js",
     "npm-i": "./bin/install.js",
-    "npm-uninstall": "./bin/install.js --uninstall",
-    "npm-un": "./bin/install.js --uninstall",
-    "npm-remove": "./bin/install.js --uninstall",
-    "npm-rm": "./bin/install.js --uninstall",
-    "npm-r": "./bin/install.js --uninstall"
+    "npm-uninstall": "./bin/uninstall.js",
+    "npm-un": "./bin/uninstall.js",
+    "npm-remove": "./bin/uninstall.js",
+    "npm-rm": "./bin/uninstall.js",
+    "npm-r": "./bin/uninstall.js"
   },
   "engine": {
     "node": ">= 0.11.x",
