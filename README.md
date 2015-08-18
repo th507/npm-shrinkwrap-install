@@ -20,7 +20,8 @@ $ npm-install babel@latest --save
 You could manually alter the version in package.json and run `npm-install` as well.
 
 
-Notice:
+**Notice:**
+
 Before updating shrinkwrap, the script will try to verify node_modules content with your package.json. Which means:
 - Any package not included in `dependencies` will be pruned. So it is mandatory to use `--save` when installing new packages.
 - Any package with non-strict dependencies (^, ~, 0.2.x, \*, latest) in package.json will be updated. If you which to opt out this automatical update check, just use a strict version like 0.2.3.
@@ -33,7 +34,8 @@ $ npm-uninstall babel --save
 
 Shrinkwrap file will be automatically in sync with your dependencies in package.json.
 
-Notice:
+**Notice:**
+
 If `--save` is omitted, the script will generate an error since node_modules content does not agree with your package.json.
 
 ## Create shrinkwrap file manually
