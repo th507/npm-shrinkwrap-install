@@ -10,6 +10,7 @@ $ npm install npm-shrinkwrap-install -g
 
 This is a CLI-only package (for now).
 
+Require Node.js >= 0.11, or iojs >= 1.0
 # Usage
 ## Install/Update a package
 
