@@ -31,6 +31,28 @@ $ npm-uninstall babel --save
 
 Shrinkwrap file will be automatically in sync with your dependencies in package.json.
 
+# Commands and Aliases
+
+## Install
+`npm-install`
+`npm-i`
+
+Accepts all arguments for `npm install`
+
+## Uninstall
+`npm-uninstall`
+`npm-un`
+`npm-remove`
+`npm-rm`
+`npm-r`
+
+Accepts all arguments for `npm uninstall`
+
+## Shrinkwrap
+`npm-shrinkwrap`
+
+Accepts all arguments for Uber's [npm-shrinkwrap](http://github.com/uber/npm-shrinkwrap)
+
 # Credit
 
 This script is largely based on Uber's [npm-shrinkwrap](http://github.com/uber/npm-shrinkwrap). At the time of the writing, their tool does not support [scoped package](https://docs.npmjs.com/misc/scope). A [pull-request](https://github.com/uber/npm-shrinkwrap/pull/80) is created to rectify this issue and yet to be accepted.
