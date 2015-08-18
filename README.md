@@ -2,34 +2,42 @@
 
 Simplify package install/update with automatic shrinkwrap file sync.
 
-## Usage
 
-Install this package
+# Install
 ```bash
 $ npm install npm-shrinkwrap-install -g
 ```
 
 This is a CLI-only package (for now).
 
-Install/Update a package
+# Usage
+## Install/Update a package
 
 ```bash
 $ npm-install babel@latest --save
 ```
 
-You could manually alter the version in package.json and run
+You could manually alter the version in package.json and run `npm-install` as well.
 
-```bash
-$ npm-install
-```
+Notice:
+Before updating shrinkwrap, the script will try to verify node_modules content with your package.json. Any packages not included in `dependencies` will be pruned. So it is mandatory to use `--save` when installing new packages
 
-Uninstall a package
+## Uninstall a package
 
 ```bash
 $ npm-uninstall babel --save
 ```
 
 Shrinkwrap file will be automatically in sync with your dependencies in package.json.
+
+Notice:
+If `--save` is omitted, the script will generate an error since node_modules content does not agree with your package.json.
+
+## Create shrinkwrap file manually
+
+```bash
+$ npm-shrinkwrap
+```
 
 # Commands and Aliases
 
