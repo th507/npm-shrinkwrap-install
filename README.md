@@ -24,7 +24,7 @@ You could manually alter the version in package.json and run `npm-install` as we
 
 Before updating shrinkwrap, the script will try to verify node_modules content with your package.json. Which means:
 - Any package not included in `dependencies` will be pruned. So it is mandatory to use `--save` when installing new packages.
-- Any package with non-strict dependencies (^, ~, 0.2.x, \*, latest) in package.json will be updated. If you which to opt out this automatical update check, just use a strict version like 0.2.3.
+- Any package with non-strict version description (^, ~, 0.2.x, \*, latest) in package.json will be updated. If you which to opt out this automatical update check, just use a strict version like 0.2.3.
 
 ## Uninstall a package
 
