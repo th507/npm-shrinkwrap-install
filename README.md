@@ -1,45 +1,32 @@
 # npm-shrinkwrap-install
 
-Simplify package install/update with automatic shrinkwrap file sync
+Simplify package install/update with automatic shrinkwrap file sync.
 
 ## Usage
 
 Install this package
 ```bash
-$ npm install npm-shrinkwrap-install
+$ npm install npm-shrinkwrap-install -g
 ```
 
-Hook post-install/post-uninstall script (optional)
-
-```bash
-$ npm-install-hook
-```
+This is a CLI-only package (for now).
 
 Install/Update a package
 
 ```bash
 $ npm-install babel@latest --save
-
-# if you have post-install hook enabled, then you could
-$ npm install babal@latest --save
 ```
 
 You could manually alter the version in package.json and run
 
 ```bash
 $ npm-install
-
-# if you have post-install hook enabled
-$ npm install
 ```
 
 Uninstall a package
 
 ```bash
 $ npm-uninstall babel --save
-
-# if you have hook enabled, then you could
-$ npm uninstall babal --save
 ```
 
 Shrinkwrap file will be automatically in sync with your dependencies in package.json.

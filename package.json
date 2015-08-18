@@ -1,7 +1,7 @@
 {
   "name": "npm-shrinkwrap-install",
   "version": "0.0.1",
-  "description": "simplify npm install w/ shrinkwrap",
+  "description": "Simplify package install/update with automatic shrinkwrap file sync",
   "main": "index.js",
   "keywords": ["npm-shrinkwrap", "shrinkwrap", "install", "dependencies", "dependency"],
   "scripts": {
@@ -21,6 +21,11 @@
     "node": ">= 0.11.x",
     "io": ">=1.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/th507/npm-shrinkwrap-install"
+  },
+  "homepage": "https://github.com/th507/npm-shrinkwrap-install",
   "author": {
     "name": "Jingwei \"John\" Liu",
     "email": "liujingwei@gmail.com"
