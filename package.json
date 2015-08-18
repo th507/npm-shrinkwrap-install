@@ -1,6 +1,6 @@
 {
   "name": "npm-shrinkwrap-install",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Simplify package install/update with automatic shrinkwrap file sync",
   "main": "index.js",
   "keywords": [
